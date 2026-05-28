@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'/>
+    <title>MyWorld</title>
+    <link rel='stylesheet' href='style.css'/>
+</head>
+<body>
+
+    <header>
+
+        <div class='menu'>                                   
+            <div class='box gallery'>
+                <a href="gallery.html" class="btnhover"">Gallery</a>
+            </div>
+            <div class='box story'>
+                <a href="story.html" class="btnhover">Story</a>
+            </div>
+            <div class='box home'>
+                <a href="World.html" class="btnhover"">MyWorld</a>
+            </div>
+            <div class='box tips'>
+                <a href="tips.html" class="btnhover"">Tips</a>
+            </div>  
+            <div class="box contact">
+                <a href="contact.html" class="btn"">Contact</a>
+            </div>
+        </div>
+
+    </header>
+    <h1 "style= font-size:40px;">Contact</h1>
+<div class="background">
+    <div class="color">
+        <div class="login">
+            <div class="gifimage">
+                <img src="galleryimage/THING.gif">
+            </div>
+            <div class="formpage">
+                <div class="content">
+                    <form id="myform" action="" method="post" enctype="text/plain" name="gegevens" onsubmit="toonData(); return false;" style="width:auto;">
+                            <table>
+                                <tr>
+                                    <td style="font-size: 20px; font-weight: bold;">Gegevensformulier</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td><pre></pre></td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label for="voornaam">Voornaam </label></td>
+                                    <td> <input type="text" id="voornaam" name="voornaam" maxlength="25" title="Vul hier je voornaam in"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label for="achternaam">Achternaam </label></td>
+                                    <td> <input type="text" id="achternaam" name="achternaam" maxlength="25" title="Vul hier je achternaam in"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label for="straat" title="Voer hier u gemeente">Straat </label></td>
+                                    <td> <input type="text" id="straat" name="straat" title="Vul hier je de straat waarin je wwont"></td>
+                                </tr>            
+
+                                <tr>
+                                    <td> <label for="huisnummer">Huisnummer </label></td>
+                                    <td> <input type="text" id="huisnummer" name="huisnummer" maxlength="3" min="0" max="9999" title="Vul hier de huisnummer van je eigen huis"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label for="postcode">Postcode </label></td>
+                                    <td> <input type="text" id="postcode" name="postcode" maxlength="4" title="Vul hier de postcode waarin je leeft"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="gemeente">Gemeente </label> </td>
+                                    <td><input type="text" id="gemeente" name="gemeente" title="Vul hier de gemeente waarin je leeft"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label for="geboortedatum">Geboortedatum </label></td>
+                                    <td><input type="date" id="geboortedatum" name="geboortedatum" title="Vul hier je geboortedatum(datum van je geboorte)"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="email">E-mail adres </label></td>
+                                    <td><input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" title="Vul hier jouw persoonlijke e-mail adress" ></td>
+                                    
+                                </tr>
+                                    <td><label for="favKleur">Favoriete kleur:</label></td>
+                                    <td><input id="favKleur" type="color" name="favKleur" value="#008000"></td>
+                                <tr>
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td><label for="favSite">Favoriete website </label></td>
+                                    <td><input id="favSite" type="url" name="faveSite" title="Vul hier in je favotiete wesbite"
+                                        pattern="^(http|https|ftp):\/\/.+"></td>
+                                </tr>
+
+                                <tr>
+                            
+                                    
+                                    <td><label for="favplaces">Favoriete club </label></td>
+                                    <td>
+                                            <select id="favclub" name="favclub">
+                                                <option value="barca">Fc Barcelona</option>
+                                                <option value="rm">Real Madrid</option>
+                                                <option value="fcb">Bayern</option>
+                                            </select>
+                                    </td>
+                                    
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td title="kies hier je geslacht/gender">Geslacht:</td>
+                                    <td>
+                                        <input type="radio" name="gender" id="man" value="Man">
+                                        <label for="man">Man</label>
+
+                                        <input type="radio" name="gender" id="vrouw" value="Vrouw">
+                                        <label for="vrouw">Vrouw</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="Password">Paswoord:</label></td>
+                                    <td><input id="Password" type="password" name="Password" title="kies een wachtwoord"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label for="Controle">Controle Paswoord:</label></td>
+                                    <td><input type="password" id="Controle" name="wachtwoord_check" placeholder="Herhaal" onblur="checkPaswoord()" title="Controleer hier u wachtwoord"></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td><pre></pre></td>
+                                </tr>
+
+    
+
+                                <tr>
+                                    <td><label for="commentaar">Comment:</label></td>
+                                    <td>
+                                        <textarea id="commentaar" name="commentaar" maxlength="250" rows="4" cols="40" title="Vul hier in je commentaar" style="resize: vertical;"></textarea>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td><pre></pre></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td><pre></pre></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <input type="submit" value="Submit">
+                                        <input type="reset" value="Resetten">
+                                    </td>
+                                </tr>
+
+                                
+
+                            </table>
+
+
+
+                    </form>
+                
+                </div> 
+
+
+                <script>
+                    function reset() {
+                        document.getElementById("myForm").reset();
+
+                    }
+
+                    function mydate() {
+
+                        d = new Date(document.getElementById("geboortedatum").value);
+                        dt = d.getDate();
+                        mn = d.getMonth();
+                        mn++;
+                        yy = d.getFullYear();
+                        document.getElementById("ndt").value = dt + "/" + mn + "/" + yy;
+                        document.getElementById("ndt").hidden = false;
+                        document.getElementById("geboortedatum").hidden = true;
+                    }
+
+                    function toonData() {
+
+                        var test;
+
+                        if (document.getElementById("man").checked == true) test = "Man";
+                        if (document.getElementById("vrouw").checked == true) test = "Vrouw";
+
+
+                        document.getElementById("weergave").value = "Naam: " +
+                            document.getElementById("voornaam").value + " " + document.getElementById("achternaam").value +
+                            "\n" + "Adres: " + document.getElementById("straat").value + " " + document.getElementById("huisnummer").value +
+                            "  " + document.getElementById("postcode").value + " " + document.getElementById("gemeente").value + "\n" + "E-mail: " +
+                            document.getElementById("email").value + "\n" + "Favoriete kleur: " + document.getElementById("favKleur").value +
+                            "\n" + "Favoriete website: " + document.getElementById("favSite").value +
+                            "\n" + "Favoriete groente: " + document.getElementById("favGroente").value +
+                            "\n" + "Geboortedatum: " + document.getElementById("ndt").value +
+                            "\n" + "Geslacht: " + test +
+                            "\n" + "Paswoord: " + document.getElementById("Paswoord").value;
+
+                        document.getElementById("weergave").hidden = false;
+
+                    }
+
+                    function checkPaswoord() {
+                        if (document.getElementById("Paswoord").value != document.getElementById("Controle").value) alert("Paswoorden zijn niet hetzelfde!");
+                    }
+                </script>
+
+
+                        </div>
+                    </div>
+                </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+
+            <h2>Adrien Callewaert</h2>
+
+            <p>Artist Portfolio & Digital Gallery</p>
+
+            <p>© 2026 — All Rights Reserved</p>
+
+            <p>Today: May 25, 2026</p>
+
+            <div class="footer-links">
+                <a href="https://instagram.com/kllw_art" target="_blank">
+                    Instagram: @kllw_art
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+
+
+</body>
+</html>

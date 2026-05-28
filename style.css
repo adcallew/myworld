@@ -1,0 +1,1209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    /*background-color: white;*/
+    background-color: black;
+
+    display: flex;
+
+    justify-content: center;
+    color: #fff;
+    padding: 20px 0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index:1000;
+}
+
+
+/*header a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+
+    padding: 7px 10px;
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+header a:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}*/
+
+
+
+
+
+
+header a {
+    text-decoration: none;
+    font-weight: normal;
+    /*color: black;*/
+    color: white;
+    font-family:'Bebas Neue', sans-serif;
+
+}
+
+header a.btnhover:hover {
+    /*color: white;*/
+    color: black;
+    padding: 7px 10px; 
+    /*background-color: rgb(0, 0, 0, 0.5);*/
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+
+}
+
+
+/*.box:hover{
+    color: white;
+    
+}*/
+
+/*.btnhover:hover {
+    padding: 7px 10px; 
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+}*/
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex:1;
+    height:100%;
+}
+
+.btn {
+    padding: 7px 10px; 
+    /*background-color: black;*/
+    background: white;
+    border-radius: 10px;
+    /*color: white;*/
+    color: black;
+
+}
+
+
+
+
+
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color: black;
+    font-family:'Bebas Neue', sans-serif;
+    margin: 0 auto;
+
+}
+
+/*.gallery , .story , .date , .contact , .tips {
+    display:flex;
+   justify-content:center;
+   align-items:center;
+    
+}*/ 
+
+/*.menu {  
+  width: 80%;  
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.story , .tips{
+  margin-left: 20px;
+}
+
+
+
+.gallery, .story , .tips{
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #f9f8f8
+    
+}
+*/
+
+
+
+/* Specifieke styling voor de Login (vaak subtieler) */
+
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* Aligns items horizontally */
+    
+    
+    width: 100%;
+    min-height: 100vh;       
+    min-height: 100dvh;      
+    
+    /*background-color: #2348a0;
+    /*background-image: url(header.jpg);*/
+    background-image: url(galleryimage/thunder.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 50%;
+    z-index: 1;
+}
+
+
+
+.button{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.circle-btn {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    
+    background-color: rgb(110, 110, 142);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.background {
+    background-color: black;
+}
+
+
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    width: 1200px;
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item1, .grid-item2 , .grid-item3{
+    height: 800px;
+
+}
+
+.grid-item1{
+    background-color: black;
+    display: flex;
+    gap: 30px; 
+    
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    
+.pop {
+    color: white; 
+    font-size: 40px;
+}
+
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.content-row {
+    display: flex;
+    gap: 30px;
+}
+
+.box1 {
+    width: 250px;
+    height: 250px;
+    background: gray;
+}
+
+.box1 img {
+    width: 250px;
+    height: 250px;
+
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+
+.box2 {
+    background: rgb(44, 6, 182);
+    padding: 20px;
+    min-height: 150px;
+    width: 800px;
+    background-color: black;
+
+    display: flex;
+    gap: 35px;
+}
+
+.box2 p{
+    flex: 1;
+    color: white;
+}
+
+.bottom-row {
+    display: flex;
+    gap: 425px;
+}
+
+.box3 {
+    /*flex: 2;*/
+    background: black;
+    width: 300px;
+    height: 150px;
+    padding: 10px;   
+
+
+}
+
+.box4 {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    height: 50px;
+
+    position: relative;
+    top: 50px;
+    
+
+    background: red;
+}
+
+.box4 a {
+    color: white;
+    text-decoration: none;
+}
+
+.gif {
+    margin: 0 auto;
+}
+
+.gif img {
+    width: 500px;
+    height: 186px;
+}
+
+.define {
+    color: white;
+}
+
+.grid-item2{
+    background-color: black;
+}
+
+.inspire{
+    display: flex;
+    justify-content: flex-start;
+    gap:20px;
+    padding: 100px 20px;
+}
+
+.boite {
+    flex: 1 150px; 
+    height: 325px;
+    background-color: blue;
+    border: 4px solid white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    overflow: hidden;
+
+    
+}
+
+.boite:hover {
+    transform:scale(1.15);
+}
+
+.boite a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+
+.pic {
+    flex:2 ;
+    background-color: green;
+    z-index: 1;
+
+}
+
+.board {
+    position: absolute;
+    top: 54%;
+    left: 2%;
+    z-index: 10;
+
+    width: 80%;
+    height: 50px;
+    color: white;
+    font-size: 35px;
+    transform: perspective(800px) rotateY(25deg);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.an {
+    background-color: black;
+}
+
+.fa {
+    background-color: red;
+}
+
+.mo {
+    background-color: darkblue;
+}
+
+.na {
+    background-color: green;
+}
+
+.mu {
+    background-color: rgb(145, 43, 145);
+}
+
+.text {
+    flex: 1;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+.picture img,
+.musicpic img,
+.moviespic img,
+.naturepic img,
+.fashionpic img,
+.animepic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+.grid-item3{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+.vox {
+    padding: 50px;
+}
+
+.gallerybutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px; 
+    height: 50px;
+    background-color: red;
+    color: white;
+    margin-top: 100px;
+}
+.gallerybutton a{
+    color: white;
+    text-decoration: none;
+}
+
+.coverflow{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    border: 1px solid white;
+    height: 500px;
+    width: auto;
+    padding-left: 100px;
+    border-radius: 10px;
+
+    margin-top:100px;
+}
+
+.coverflow img{
+    width:200px;
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:0.3s;
+
+    transform:perspective(800px) rotateY(25deg);
+
+    opacity:0.7;
+}
+
+
+/* Hover effect */
+.coverflow img:hover{
+    transform:scale(1.15);
+    opacity:1;
+}
+
+.coverflow img:nth-child(1){
+    transform:scale(1.5);
+    opacity: 1;
+    z-index: 4;
+}
+
+.coverflow img:nth-child(2){
+    transform:scale(1.25);
+    opacity: 0.75;
+    z-index: 3;
+}
+
+.coverflow img:nth-child(3){
+    transform:scale(1);
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.coverflow img:nth-child(4){
+    transform:scale(0.75);
+    opacity: 0.25;
+    z-index: 1;
+    position: relative;
+    right: 50px;
+}
+
+
+
+/*contact*/
+.login {
+    width: 100%;
+    width: 100%;
+    min-height: 100vh;       /* Fallback for older browsers */
+    min-height: 100dvh;
+
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.color{
+    background-color: black;
+}*/
+.gifimage{
+    width: 50%;
+}
+.gifimage img{
+    width: 100%;
+}
+
+/*inspiration*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 300px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+}
+
+
+
+
+.inspo {
+    width: 60%;
+    height: 600px;
+    border: 2px solid black;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 4px solid white;
+}
+
+.picture {
+    flex: 1;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.texten {
+    flex: 1;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    font-family:'Bebas Neue', sans-serif;
+    overflow-y: auto;
+
+}
+
+.texten h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+.formpage {
+    flex: 1;
+    width: 50%;
+
+    display: flex;
+    color: white;
+    margin-left: 125px;
+    /*flex-direction: column;*/
+
+}
+
+.formpage form {
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+
+}
+
+
+/*story file*/
+
+.storycontainer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pot {
+    width: 1200px;
+    display: flex;
+    gap:50px;
+    padding: 100px 20px;
+    background-color: white;
+}
+
+.storybox {
+    flex:1;
+    height: 750px;
+    font-family: "Times New Roman", Times, serif;
+    position: relative ;
+
+}
+
+.picgif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picgif img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+
+
+.love {
+    position: relative;
+    bottom: 20px;
+}
+
+.interest p {
+    z-index: 1;
+}
+
+
+.dope {
+    position: absolute;
+
+    top: 10px;
+    right: 400px;
+    z-index: 10;
+}
+
+.conclusionstory {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.conclusion {
+    width: 1200px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    font-size: 20px;
+    padding: 100px 20px;
+
+}
+
+
+.bottom-r {
+    display: flex;
+    gap: 425px;
+    padding-top: 50px;
+}
+
+.box5 {
+    /*flex: 2;*/
+    background: white;
+    width: 200px;
+    height: 150px;
+    padding: 10px;   
+
+
+}
+
+.box7 {
+    /*flex: 2;*/
+    background: white;
+    width: 300px;
+    height: 150px;
+    padding: 10px;   
+
+
+}
+
+
+
+.box6 {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    height: 50px;
+
+    position: relative;
+    top: 50px;
+    
+
+    background: red;
+}
+
+.box6 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+#io {color: black; font-size: 50px; font-family: "Times New Roman", Times, serif;}
+
+#po {color: white; font-size: 50px; font-family: "Times New Roman", Times, serif;}
+
+
+.oops {
+    display: flex; 
+    height: 1000px;
+    background-color: black;
+    color: white;
+
+
+}
+
+.joy {
+    flex: 1;
+}
+
+
+.gigavierkant {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grootvierkant {
+    display: grid;
+    color: white;
+    font-size: 20px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 1vw;
+    padding-right: 100px;
+
+}
+.no {
+    background-color: blue;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.no img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+            
+}
+.no:hover {
+    transform:scale(1.6);
+}
+
+.vierkant1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.vierkant2 { 
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.vierkant4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
+
+
+.textjoy {
+    padding: 200px 50px; 
+
+}
+
+#sketch {
+    font-size: 200px;
+}
+
+
+.cover {
+    display: flex;
+    /*justify-content: center; 
+    align-items: center;*/
+    background-color: rgb(236, 145, 171);
+    /*height: 800px ;*/
+    color: white;
+
+}*/
+
+.house {
+    /*gap: 30px;*/
+    display: flex;
+    flex-direction: row;
+    margin:0 auto;
+}
+
+/*.pute{
+    flex: 2;
+    width : 640px; 
+    height: 358.5px;
+
+    
+
+
+}*/
+
+
+.pute img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*border: 2px solid black;*/
+            
+
+}
+
+.phrase {
+    flex: 1;
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.casa {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    /*gap: 1vw;*/
+
+}
+
+.pitt {
+    background-color: lightblue;
+    border: 2px solid black;
+    overflow: hidden;
+
+}
+
+
+
+.pitt img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+            
+}
+.pitt:hover {
+    transform:scale(1.8);
+}
+
+
+.lourd {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(236, 145, 171);
+    height: 1200px;
+}
+
+.boug {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(236, 145, 171);
+    color: white;
+    height: 600px;
+}
+
+
+.casablanca {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+
+}
+
+.messi {
+    background-color: lightblue;
+    border: 2px solid black;
+    overflow: hidden;
+    width: 200px;
+
+}
+
+
+
+.messi img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+            
+}
+.messi:hover {
+    transform:scale(1.3);
+}
+
+
+#myselff {
+    background-color: rgb(236, 145, 171);
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: yellow;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+
+    /* ===== HEADER MENU (ALL PAGES) ===== */
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    header {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    /* ===== STORY + TIPS LAYOUT ===== */
+    .pot {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .storybox {
+        height: auto;
+    }
+
+    /* ===== GALLERY GRID (sketch wall) ===== */
+    .grootvierkant {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        padding-right: 0;
+    }
+
+    /* ===== PAINTINGS SECTION ===== */
+    .house {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pute {
+        width: 90%;
+    }
+
+    .phrase {
+        font-size: 50px;
+    }
+
+    /* ===== CASA GRID ===== */
+    .casa {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ===== CASABLANCA GRID ===== */
+    .casablanca {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ===== CONTACT PAGE ===== */
+    .login {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .formpage {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .gifimage {
+        width: 80%;
+    }
+
+    /* ===== GENERAL TEXT FIXES ===== */
+    #myselff {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    #sketch {
+        font-size: 80px;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer h2 {
+        font-size: 28px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 1024px) and (min-width: 601px) {
+
+    /* ===== MENU ===== */
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* ===== STORY / TIPS LAYOUT ===== */
+    .pot {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* ===== GALLERY GRID ===== */
+    .grootvierkant {
+        grid-template-columns: repeat(3, 1fr);
+        padding-right: 0;
+    }
+
+    /* ===== PAINTINGS ===== */
+    .house {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pute {
+        width: 80%;
+    }
+
+    .phrase {
+        font-size: 70px;
+    }
+
+    /* ===== CASA GRID ===== */
+    .casa {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ===== CASABLANCA GRID ===== */
+    .casablanca {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ===== CONTACT ===== */
+    .login {
+        flex-direction: column;
+    }
+
+    .formpage {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* ===== TEXT ===== */
+    #sketch {
+        font-size: 120px;
+    }
+
+    #myselff {
+        font-size: 40px;
+    }
+}
+
