@@ -37,7 +37,7 @@
             </div>
             <div class="formpage">
                 <div class="content">
-                    <form id="myform" action="" method="post" enctype="text/plain" name="gegevens" onsubmit="toonData(); return false;" style="width:auto;">
+                    <form id="myForm" action="" method="post" enctype="text/plain" name="gegevens" onsubmit="toonData(); return false;" style="width:auto;">
                             <table>
                                 <tr>
                                     <td style="font-size: 20px; font-weight: bold;">Gegevensformulier</td>
@@ -163,7 +163,7 @@
 
                                 <tr>
                                     <td>
-                                        <input type="submit" value="Submit">
+                                        <input type="button" value="Submit" onclick="toonData()">
                                         <input type="reset" value="Resetten">
                                     </td>
                                 </tr>
@@ -177,58 +177,85 @@
                     </form>
                 
                 </div> 
+            </div>
+        </div>
+    </div>   
 
+                    <script>
+                        
+                        function resetForm() {
+                            document.getElementById("myForm").reset();
+                        }
 
-                <script>
-                    function reset() {
-                        document.getElementById("myForm").reset();
+                        
+                        function checkPaswoord() {
 
-                    }
+                            let pass1 = document.getElementById("Password").value;
+                            let pass2 = document.getElementById("Controle").value;
 
-                    function mydate() {
+                            if (pass1 !== pass2) {
+                                alert("Paswoorden zijn niet hetzelfde!");
+                            }
+                        }
 
-                        d = new Date(document.getElementById("geboortedatum").value);
-                        dt = d.getDate();
-                        mn = d.getMonth();
-                        mn++;
-                        yy = d.getFullYear();
-                        document.getElementById("ndt").value = dt + "/" + mn + "/" + yy;
-                        document.getElementById("ndt").hidden = false;
-                        document.getElementById("geboortedatum").hidden = true;
-                    }
+                        
+                        function toonData() {
 
-                    function toonData() {
+                            let geslacht = "";
 
-                        var test;
+                            if (document.getElementById("man").checked) {
+                                geslacht = "Man";
+                            }
 
-                        if (document.getElementById("man").checked == true) test = "Man";
-                        if (document.getElementById("vrouw").checked == true) test = "Vrouw";
+                            if (document.getElementById("vrouw").checked) {
+                                geslacht = "Vrouw";
+                            }
 
+                            
+                            let geboortedatum =
+                                document.getElementById("geboortedatum").value;
 
-                        document.getElementById("weergave").value = "Naam: " +
-                            document.getElementById("voornaam").value + " " + document.getElementById("achternaam").value +
-                            "\n" + "Adres: " + document.getElementById("straat").value + " " + document.getElementById("huisnummer").value +
-                            "  " + document.getElementById("postcode").value + " " + document.getElementById("gemeente").value + "\n" + "E-mail: " +
-                            document.getElementById("email").value + "\n" + "Favoriete kleur: " + document.getElementById("favKleur").value +
-                            "\n" + "Favoriete website: " + document.getElementById("favSite").value +
-                            "\n" + "Favoriete groente: " + document.getElementById("favGroente").value +
-                            "\n" + "Geboortedatum: " + document.getElementById("ndt").value +
-                            "\n" + "Geslacht: " + test +
-                            "\n" + "Paswoord: " + document.getElementById("Paswoord").value;
+                            
+                            let output =
+                                "Naam: " +
+                                document.getElementById("voornaam").value + " " +
+                                document.getElementById("achternaam").value +
 
-                        document.getElementById("weergave").hidden = false;
+                                "\nAdres: " +
+                                document.getElementById("straat").value + " " +
+                                document.getElementById("huisnummer").value + ", " +
+                                document.getElementById("postcode").value + " " +
+                                document.getElementById("gemeente").value +
 
-                    }
+                                "\nE-mail: " +
+                                document.getElementById("email").value +
 
-                    function checkPaswoord() {
-                        if (document.getElementById("Paswoord").value != document.getElementById("Controle").value) alert("Paswoorden zijn niet hetzelfde!");
-                    }
-                </script>
+                                "\nFavoriete kleur: " +
+                                document.getElementById("favKleur").value +
 
+                                "\nFavoriete website: " +
+                                document.getElementById("favSite").value +
 
-                        </div>
-                    </div>
-                </div>
+                                "\nFavoriete club: " +
+                                document.getElementById("favclub").value +
+
+                                "\nGeboortedatum: " +
+                                geboortedatum +
+
+                                "\nGeslacht: " +
+                                geslacht +
+
+                                "\nCommentaar: " +
+                                document.getElementById("commentaar").value;
+
+                            
+                            alert(output);
+                        }
+                
+                    </script>
+                
+
+    
 
     <footer class="footer">
         <div class="footer-content">
